@@ -1,0 +1,18 @@
+.jumbotron {
+  background-color: #A4CACD
+}
+
+body {
+    background-color: #edece1
+}
+
+.alert-danger {
+    color: #721c1c;
+    background-color: ##f8e5d7bf;
+    border-color: #FFEB3B;
+    text-align: center!important
+}
+
+.alert {
+  display: none;
+}

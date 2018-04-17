@@ -43,16 +43,16 @@
               <label for="titke">Content</label>
               <textarea type="text" class="form-control" rows="6" id="content"></textarea>
             </div>
-            <button id="create-post" type="submit" class="btn btn-info btn-large" name="button">Create New Post</button>
+            <button id="create-post" type="button" class="btn btn-info btn-large" name="button">Create New Post</button>
           </form>
 
-          <form id="update-form"  style="display:none;" action="/posts/" method="post">
+          <form id="update-form" action="/posts/" method="post">
             <div class="form-group">
               <label for="Title">Title</label>
               <input type="text" class="form-control" id="update-title" name="" value="">
             </div>
             <div class="form-group">
-              <label for="titke">Content</label>
+              <label for="title">Content</label>
               <textarea type="text" class="form-control" rows="6" id="update-content"></textarea>
             </div>
             <button id="update-post" type="submit" class="btn btn-info btn-large" href="#" name="button">Update Post</button>
@@ -60,11 +60,11 @@
 
           <section id="postEditOrDelete">
             <header>
-              <h2>Edit your post or delete</h2>
+              <h2 id="post-title"></h2>
               <hr>
             </header>
             <article class="">
-              <p></p>
+              <p id="post-content"></p>
             </article>
             <aside class="my-4">
               <ul class="nav justify-content-end">
@@ -86,5 +86,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="blog.js" type="text/javascript"></script>
     <script src="post.js" type="text/javascript"></script>
+    <script src="update.js" type="text/javascript"></script>
+    <script src="delete.js" type="text/javascript"></script>
   </body>
 </html>

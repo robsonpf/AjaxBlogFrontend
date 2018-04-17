@@ -1,4 +1,4 @@
-const baseUrl = `http://localhost:3000`
+const baseUrl = `https://radiant-spire-41780.herokuapp.com`
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -46,7 +46,7 @@ const showPost = (event) => {
       const postContent = document.getElementById("post-content");
       const updatePost = document.getElementById("edit-post");
       const deletePost = document.getElementById("delete-post");
-      
+
       postTitle.textContent = result.data.result.title;
       postContent.textContent = result.data.result.content;
       updatePost.href = `#/posts/${result.data.result.id}`;
